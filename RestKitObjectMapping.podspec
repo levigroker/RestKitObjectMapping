@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage     = 'https://github.com/levigroker/RestKitObjectMapping'
   s.author       = { 'Levi Brown' => 'levigroker@gmail.com' }
   s.source       = { :git => 'https://github.com/levigroker/RestKitObjectMapping.git', :tag => 'v0.10.3.1' }
-  s.source_files = 'Code/ObjectMapping', 'Code/Support', 'Code/Support/Parsers/JSON'
+  s.source_files = 'Code/Additions', 'Code/ObjectMapping', 'Code/Support', 'Code/Support/Parsers/JSON'
 
   s.ios.deployment_target = '5.0'
 
