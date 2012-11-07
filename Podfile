@@ -1,0 +1,5 @@
+platform :ios, '5.0'
+pod 'CocoaLumberjack',		'~> 1.6'
+pod 'JSONKit',				'>= 1.5pre'
+pod 'ISO8601DateFormatter',	'>= 0.6'
+pod 'SOCKit',				'~> 1.1'

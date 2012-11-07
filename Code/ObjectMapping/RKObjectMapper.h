@@ -24,7 +24,6 @@
 #import "RKObjectMappingResult.h"
 #import "RKObjectMappingProvider.h"
 #import "RKMappingOperationQueue.h"
-#import "Support.h"
 
 @class RKObjectMapper;
 

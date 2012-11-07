@@ -18,11 +18,9 @@
 //  limitations under the License.
 //
 
-#import "RKRequestSerialization.h"
 #import "RKMIMETypes.h"
 #import "RKParser.h"
 #import "RKObjectSerializer.h"
-#import "NSDictionary+RKRequestSerialization.h"
 #import "RKParserRegistry.h"
 #import "RKLog.h"
 
@@ -90,22 +88,6 @@
         }
 
         return string;
-    }
-
-    return nil;
-}
-
-- (id<RKRequestSerializable>)serializationForMIMEType:(NSString *)MIMEType error:(NSError **)error
-{
-    if ([MIMEType isEqualToString:RKMIMETypeFormURLEncoded]) {
-        // Dictionaries are natively RKRequestSerializable as Form Encoded
-        return [self serializedObject:error];
-    } else {
-        NSString *string = [self serializedObjectForMIMEType:MIMEType error:error];
-        if (string) {
-            NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
-            return [RKRequestSerialization serializationWithData:data MIMEType:MIMEType];
-        }
     }
 
     return nil;

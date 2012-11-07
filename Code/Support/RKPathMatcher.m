@@ -36,7 +36,7 @@ BOOL RKPathUsesParentheticalParameters(NSString *path) {
 
 NSString *RKPathPatternFindAndReplaceParensWithColons(NSString *pattern) {
     if (RKPathUsesParentheticalParameters(pattern)) {
-        RKLogWarning(@"Use of encapsulating parentheses for pattern parameters is deprecated.  Use a single colon instead. For example, instead of /group/(role)/(user) you should use /group/:role/:user");
+//        RKLogWarning(@"Use of encapsulating parentheses for pattern parameters is deprecated.  Use a single colon instead. For example, instead of /group/(role)/(user) you should use /group/:role/:user");
         NSString *noTrailingParen = [pattern stringByReplacingOccurrencesOfString:@")" withString:@""];
         pattern = [noTrailingParen stringByReplacingOccurrencesOfString:@"(" withString:@":"];
     }

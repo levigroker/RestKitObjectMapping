@@ -19,7 +19,7 @@
 //
 
 #import "RKDotNetDateFormatter.h"
-#import "RestKit.h"
+#import "RKLog.h"
 
 #if __MAC_OS_X_VERSION_MAX_ALLOWED >= 1070 || __IPHONE_OS_VERSION_MAX_ALLOWED >= 40000
 

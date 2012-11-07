@@ -20,7 +20,6 @@
 
 #import "RKObjectMapping.h"
 #import "RKObjectMappingOperation.h"
-#import "RKRequestSerializable.h"
 
 /**
  Performs a serialization of an object and its relationships back into
@@ -49,12 +48,5 @@
  for the specified MIME Type
  */
 - (NSString *)serializedObjectForMIMEType:(NSString *)MIMEType error:(NSError **)error;
-
-/**
- Return a request serialization for the source object by mapping it to an NSMutableDictionary, encoding
- the data via a parser into the specified MIME Type, and wrapping it into a serializable format that can
- be used as the params of an RKRequest or RKObjectLoader
- */
-- (id<RKRequestSerializable>)serializationForMIMEType:(NSString *)mimeType error:(NSError **)error;
 
 @end

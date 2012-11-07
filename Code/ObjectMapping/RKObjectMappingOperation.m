@@ -260,7 +260,7 @@ BOOL RKObjectIsValueEqualToValue(id sourceValue, id destinationValue) {
         if (!success) {
             if (_validationError) {
                 RKLogError(@"Validation failed while mapping attribute at key path '%@' to value %@. Error: %@", keyPath, *value, [_validationError localizedDescription]);
-                RKLogValidationError(_validationError);
+//                RKLogValidationError(_validationError);
             } else {
                 RKLogWarning(@"Destination object %@ rejected attribute value %@ for keyPath %@. Skipping...", self.destinationObject, *value, keyPath);
             }

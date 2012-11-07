@@ -22,6 +22,7 @@
 #import "RKObjectMapperError.h"
 #import "RKObjectMapper_Private.h"
 #import "RKObjectMappingProvider+Contexts.h"
+#import "RKLog.h"
 
 // Set Logging Component
 #undef RKLogComponent
