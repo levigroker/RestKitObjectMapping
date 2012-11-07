@@ -11,7 +11,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '5.0'
 
   s.dependency 'CocoaLumberjack',      '~> 1.6'
-  s.dependency 'JSONKit',              '>= 1.5pre'
   s.dependency 'ISO8601DateFormatter', '>= 0.6'
   s.dependency 'SOCKit',               '~> 1.1'
 end
