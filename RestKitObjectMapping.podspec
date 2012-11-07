@@ -7,7 +7,6 @@ Pod::Spec.new do |s|
   s.author       = { 'Levi Brown' => 'levigroker@gmail.com' }
   s.source       = { :git => 'https://github.com/levigroker/RestKitObjectMapping.git', :tag => 'v0.10.3.1' }
   s.source_files = 'Code/ObjectMapping/**', 'Code/Support/**'
-  s.requires_arc = true
 
   s.ios.deployment_target = '5.0'
 
