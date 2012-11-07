@@ -15,6 +15,8 @@
 		0873FF4C164AFFB1002323AA /* AbstractMappableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0873FF45164AFFB1002323AA /* AbstractMappableObject.m */; };
 		0873FF4D164AFFB1002323AA /* MappableObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 0873FF46164AFFB1002323AA /* MappableObject.h */; };
 		0873FF4E164AFFB1002323AA /* MappableObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 0873FF46164AFFB1002323AA /* MappableObject.h */; };
+		0873FF51164B00A6002323AA /* RestKitLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 0873FF50164B00A6002323AA /* RestKitLogging.h */; };
+		0873FF52164B00A6002323AA /* RestKitLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 0873FF50164B00A6002323AA /* RestKitLogging.h */; };
 		08C71B72164ACFEB001C0B80 /* RKConfigurationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C71B38164ACFEB001C0B80 /* RKConfigurationDelegate.h */; };
 		08C71B73164ACFEB001C0B80 /* RKConfigurationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C71B38164ACFEB001C0B80 /* RKConfigurationDelegate.h */; };
 		08C71B74164ACFEB001C0B80 /* RKDynamicObjectMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C71B39164ACFEB001C0B80 /* RKDynamicObjectMapping.h */; };
@@ -35,8 +37,6 @@
 		08C71B83164ACFEB001C0B80 /* RKErrorMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C71B3E164ACFEB001C0B80 /* RKErrorMessage.m */; };
 		08C71B84164ACFEB001C0B80 /* RKErrorMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C71B3E164ACFEB001C0B80 /* RKErrorMessage.m */; };
 		08C71B85164ACFEB001C0B80 /* RKErrorMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C71B3E164ACFEB001C0B80 /* RKErrorMessage.m */; };
-		08C71B86164ACFEB001C0B80 /* RKlog.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C71B3F164ACFEB001C0B80 /* RKlog.h */; };
-		08C71B87164ACFEB001C0B80 /* RKlog.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C71B3F164ACFEB001C0B80 /* RKlog.h */; };
 		08C71B88164ACFEB001C0B80 /* RKMappingOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C71B40164ACFEB001C0B80 /* RKMappingOperationQueue.h */; };
 		08C71B89164ACFEB001C0B80 /* RKMappingOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C71B40164ACFEB001C0B80 /* RKMappingOperationQueue.h */; };
 		08C71B8A164ACFEB001C0B80 /* RKMappingOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C71B41164ACFEB001C0B80 /* RKMappingOperationQueue.m */; };
@@ -221,6 +221,7 @@
 		0873FF44164AFFB1002323AA /* AbstractMappableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractMappableObject.h; sourceTree = "<group>"; };
 		0873FF45164AFFB1002323AA /* AbstractMappableObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractMappableObject.m; sourceTree = "<group>"; };
 		0873FF46164AFFB1002323AA /* MappableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MappableObject.h; sourceTree = "<group>"; };
+		0873FF50164B00A6002323AA /* RestKitLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestKitLogging.h; sourceTree = "<group>"; };
 		08C71B38164ACFEB001C0B80 /* RKConfigurationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKConfigurationDelegate.h; sourceTree = "<group>"; };
 		08C71B39164ACFEB001C0B80 /* RKDynamicObjectMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKDynamicObjectMapping.h; sourceTree = "<group>"; };
 		08C71B3A164ACFEB001C0B80 /* RKDynamicObjectMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKDynamicObjectMapping.m; sourceTree = "<group>"; };
@@ -228,7 +229,6 @@
 		08C71B3C164ACFEB001C0B80 /* RKDynamicObjectMappingMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKDynamicObjectMappingMatcher.m; sourceTree = "<group>"; };
 		08C71B3D164ACFEB001C0B80 /* RKErrorMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKErrorMessage.h; sourceTree = "<group>"; };
 		08C71B3E164ACFEB001C0B80 /* RKErrorMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKErrorMessage.m; sourceTree = "<group>"; };
-		08C71B3F164ACFEB001C0B80 /* RKlog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKlog.h; sourceTree = "<group>"; };
 		08C71B40164ACFEB001C0B80 /* RKMappingOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKMappingOperationQueue.h; sourceTree = "<group>"; };
 		08C71B41164ACFEB001C0B80 /* RKMappingOperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKMappingOperationQueue.m; sourceTree = "<group>"; };
 		08C71B42164ACFEB001C0B80 /* RKObjectAttributeMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKObjectAttributeMapping.h; sourceTree = "<group>"; };
@@ -331,6 +331,7 @@
 				0873FF44164AFFB1002323AA /* AbstractMappableObject.h */,
 				0873FF45164AFFB1002323AA /* AbstractMappableObject.m */,
 				0873FF46164AFFB1002323AA /* MappableObject.h */,
+				0873FF50164B00A6002323AA /* RestKitLogging.h */,
 			);
 			path = Additions;
 			sourceTree = "<group>";
@@ -345,7 +346,6 @@
 				08C71B3C164ACFEB001C0B80 /* RKDynamicObjectMappingMatcher.m */,
 				08C71B3D164ACFEB001C0B80 /* RKErrorMessage.h */,
 				08C71B3E164ACFEB001C0B80 /* RKErrorMessage.m */,
-				08C71B3F164ACFEB001C0B80 /* RKlog.h */,
 				08C71B40164ACFEB001C0B80 /* RKMappingOperationQueue.h */,
 				08C71B41164ACFEB001C0B80 /* RKMappingOperationQueue.m */,
 				08C71B42164ACFEB001C0B80 /* RKObjectAttributeMapping.h */,
@@ -474,7 +474,6 @@
 				08C71B74164ACFEB001C0B80 /* RKDynamicObjectMapping.h in Headers */,
 				08C71B7A164ACFEB001C0B80 /* RKDynamicObjectMappingMatcher.h in Headers */,
 				08C71B80164ACFEB001C0B80 /* RKErrorMessage.h in Headers */,
-				08C71B86164ACFEB001C0B80 /* RKlog.h in Headers */,
 				08C71B88164ACFEB001C0B80 /* RKMappingOperationQueue.h in Headers */,
 				08C71B8E164ACFEB001C0B80 /* RKObjectAttributeMapping.h in Headers */,
 				08C71B94164ACFEB001C0B80 /* RKObjectMapper.h in Headers */,
@@ -505,6 +504,7 @@
 				08C71C15164AD11D001C0B80 /* RKOrderedDictionary.h in Headers */,
 				0873FF47164AFFB1002323AA /* AbstractMappableObject.h in Headers */,
 				0873FF4D164AFFB1002323AA /* MappableObject.h in Headers */,
+				0873FF51164B00A6002323AA /* RestKitLogging.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,7 +516,6 @@
 				08C71B75164ACFEB001C0B80 /* RKDynamicObjectMapping.h in Headers */,
 				08C71B7B164ACFEB001C0B80 /* RKDynamicObjectMappingMatcher.h in Headers */,
 				08C71B81164ACFEB001C0B80 /* RKErrorMessage.h in Headers */,
-				08C71B87164ACFEB001C0B80 /* RKlog.h in Headers */,
 				08C71B89164ACFEB001C0B80 /* RKMappingOperationQueue.h in Headers */,
 				08C71B8F164ACFEB001C0B80 /* RKObjectAttributeMapping.h in Headers */,
 				08C71B95164ACFEB001C0B80 /* RKObjectMapper.h in Headers */,
@@ -547,6 +546,7 @@
 				08C71C16164AD11D001C0B80 /* RKOrderedDictionary.h in Headers */,
 				0873FF48164AFFB1002323AA /* AbstractMappableObject.h in Headers */,
 				0873FF4E164AFFB1002323AA /* MappableObject.h in Headers */,
+				0873FF52164B00A6002323AA /* RestKitLogging.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

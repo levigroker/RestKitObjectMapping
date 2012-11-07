@@ -2,7 +2,7 @@
 //  AbstractMappableObject.m
 //
 //  Created by Levi Brown on 11/7/12.
-//  Copyright (c) 2012 RestKit. All rights reserved.
+//  Copyright (c) 2012 Levi Brown. All rights reserved.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.

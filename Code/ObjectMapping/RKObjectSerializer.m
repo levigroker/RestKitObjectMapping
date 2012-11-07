@@ -4,6 +4,7 @@
 //
 //  Created by Blake Watters on 5/2/11.
 //  Copyright (c) 2009-2012 RestKit. All rights reserved.
+//  Modified from original by Levi Brown on 11/7/12.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -22,7 +23,7 @@
 #import "RKParser.h"
 #import "RKObjectSerializer.h"
 #import "RKParserRegistry.h"
-#import "RKLog.h"
+#import "RestKitLogging.h"
 
 // Set Logging Component
 #undef RKLogComponent

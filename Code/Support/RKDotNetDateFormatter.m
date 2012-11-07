@@ -4,6 +4,7 @@
 //
 //  Created by Greg Combs on 9/8/11.
 //  Copyright (c) 2009-2012 RestKit. All rights reserved.
+//  Modified from original by Levi Brown on 11/7/12.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -19,7 +20,7 @@
 //
 
 #import "RKDotNetDateFormatter.h"
-#import "RKLog.h"
+#import "RestKitLogging.h"
 
 #if __MAC_OS_X_VERSION_MAX_ALLOWED >= 1070 || __IPHONE_OS_VERSION_MAX_ALLOWED >= 40000
 
