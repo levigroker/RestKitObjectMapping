@@ -23,6 +23,12 @@
 		0873FF58164B084C002323AA /* RKJSONParserNSJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0873FF54164B084C002323AA /* RKJSONParserNSJSON.m */; };
 		0873FF59164B084C002323AA /* RKJSONParserNSJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0873FF54164B084C002323AA /* RKJSONParserNSJSON.m */; };
 		0873FF5A164B084C002323AA /* RKJSONParserNSJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0873FF54164B084C002323AA /* RKJSONParserNSJSON.m */; };
+		0873FF88164B1C5B002323AA /* ObjectMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0873FF86164B1C5B002323AA /* ObjectMapper.h */; };
+		0873FF89164B1C5B002323AA /* ObjectMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0873FF86164B1C5B002323AA /* ObjectMapper.h */; };
+		0873FF8A164B1C5B002323AA /* ObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0873FF87164B1C5B002323AA /* ObjectMapper.m */; };
+		0873FF8B164B1C5B002323AA /* ObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0873FF87164B1C5B002323AA /* ObjectMapper.m */; };
+		0873FF8C164B1C5B002323AA /* ObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0873FF87164B1C5B002323AA /* ObjectMapper.m */; };
+		0873FF8D164B1C5B002323AA /* ObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0873FF87164B1C5B002323AA /* ObjectMapper.m */; };
 		08C71B72164ACFEB001C0B80 /* RKConfigurationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C71B38164ACFEB001C0B80 /* RKConfigurationDelegate.h */; };
 		08C71B73164ACFEB001C0B80 /* RKConfigurationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C71B38164ACFEB001C0B80 /* RKConfigurationDelegate.h */; };
 		08C71B74164ACFEB001C0B80 /* RKDynamicObjectMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C71B39164ACFEB001C0B80 /* RKDynamicObjectMapping.h */; };
@@ -224,6 +230,8 @@
 		0873FF50164B00A6002323AA /* RestKitLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestKitLogging.h; sourceTree = "<group>"; };
 		0873FF53164B084C002323AA /* RKJSONParserNSJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKJSONParserNSJSON.h; sourceTree = "<group>"; };
 		0873FF54164B084C002323AA /* RKJSONParserNSJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKJSONParserNSJSON.m; sourceTree = "<group>"; };
+		0873FF86164B1C5B002323AA /* ObjectMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectMapper.h; sourceTree = "<group>"; };
+		0873FF87164B1C5B002323AA /* ObjectMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectMapper.m; sourceTree = "<group>"; };
 		08C71B38164ACFEB001C0B80 /* RKConfigurationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKConfigurationDelegate.h; sourceTree = "<group>"; };
 		08C71B39164ACFEB001C0B80 /* RKDynamicObjectMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKDynamicObjectMapping.h; sourceTree = "<group>"; };
 		08C71B3A164ACFEB001C0B80 /* RKDynamicObjectMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKDynamicObjectMapping.m; sourceTree = "<group>"; };
@@ -334,6 +342,8 @@
 				0873FF50164B00A6002323AA /* RestKitLogging.h */,
 				0873FF53164B084C002323AA /* RKJSONParserNSJSON.h */,
 				0873FF54164B084C002323AA /* RKJSONParserNSJSON.m */,
+				0873FF86164B1C5B002323AA /* ObjectMapper.h */,
+				0873FF87164B1C5B002323AA /* ObjectMapper.m */,
 			);
 			path = Additions;
 			sourceTree = "<group>";
@@ -489,6 +499,7 @@
 				0873FF4D164AFFB1002323AA /* MappableObject.h in Headers */,
 				0873FF51164B00A6002323AA /* RestKitLogging.h in Headers */,
 				0873FF55164B084C002323AA /* RKJSONParserNSJSON.h in Headers */,
+				0873FF88164B1C5B002323AA /* ObjectMapper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,6 +542,7 @@
 				0873FF4E164AFFB1002323AA /* MappableObject.h in Headers */,
 				0873FF52164B00A6002323AA /* RestKitLogging.h in Headers */,
 				0873FF56164B084C002323AA /* RKJSONParserNSJSON.h in Headers */,
+				0873FF89164B1C5B002323AA /* ObjectMapper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -739,6 +751,7 @@
 				08C71C17164AD11D001C0B80 /* RKOrderedDictionary.m in Sources */,
 				0873FF49164AFFB1002323AA /* AbstractMappableObject.m in Sources */,
 				0873FF57164B084C002323AA /* RKJSONParserNSJSON.m in Sources */,
+				0873FF8A164B1C5B002323AA /* ObjectMapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -772,6 +785,7 @@
 				08C71C18164AD11D001C0B80 /* RKOrderedDictionary.m in Sources */,
 				0873FF4A164AFFB1002323AA /* AbstractMappableObject.m in Sources */,
 				0873FF58164B084C002323AA /* RKJSONParserNSJSON.m in Sources */,
+				0873FF8B164B1C5B002323AA /* ObjectMapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -805,6 +819,7 @@
 				08C71C19164AD11D001C0B80 /* RKOrderedDictionary.m in Sources */,
 				0873FF4B164AFFB1002323AA /* AbstractMappableObject.m in Sources */,
 				0873FF59164B084C002323AA /* RKJSONParserNSJSON.m in Sources */,
+				0873FF8C164B1C5B002323AA /* ObjectMapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -838,6 +853,7 @@
 				08C71C1A164AD11D001C0B80 /* RKOrderedDictionary.m in Sources */,
 				0873FF4C164AFFB1002323AA /* AbstractMappableObject.m in Sources */,
 				0873FF5A164B084C002323AA /* RKJSONParserNSJSON.m in Sources */,
+				0873FF8D164B1C5B002323AA /* ObjectMapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

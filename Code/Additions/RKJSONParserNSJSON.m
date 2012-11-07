@@ -44,7 +44,7 @@
     NSData *data = [NSJSONSerialization dataWithJSONObject:object options:0 error:error];
     if (data)
     {
-        retVal = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        retVal = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
     }
 
     return retVal;
