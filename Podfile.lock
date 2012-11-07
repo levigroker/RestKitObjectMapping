@@ -2,19 +2,16 @@
 PODS:
 - CocoaLumberjack (1.6)
 - ISO8601DateFormatter (0.6)
-- JSONKit (1.5pre)
 - SOCKit (1.1)
 
 DEPENDENCIES:
 - CocoaLumberjack (~> 1.6)
 - ISO8601DateFormatter (>= 0.6)
-- JSONKit (>= 1.5pre)
 - SOCKit (~> 1.1)
 
 SPEC CHECKSUMS:
   CocoaLumberjack: 0f2fa7090a23f13261072d882e017c688300efbe
   ISO8601DateFormatter: dc05a2481edf49668d85d3ff8c466c32eb544780
-  JSONKit: a01a22c75f27eae76b4badd55a91c20fe6e86477
   SOCKit: 179515c1a621dd5652a60e9be02ea4adcd25bc9b
 
 COCOAPODS: 0.15.2

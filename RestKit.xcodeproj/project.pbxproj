@@ -17,6 +17,12 @@
 		0873FF4E164AFFB1002323AA /* MappableObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 0873FF46164AFFB1002323AA /* MappableObject.h */; };
 		0873FF51164B00A6002323AA /* RestKitLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 0873FF50164B00A6002323AA /* RestKitLogging.h */; };
 		0873FF52164B00A6002323AA /* RestKitLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 0873FF50164B00A6002323AA /* RestKitLogging.h */; };
+		0873FF55164B084C002323AA /* RKJSONParserNSJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 0873FF53164B084C002323AA /* RKJSONParserNSJSON.h */; };
+		0873FF56164B084C002323AA /* RKJSONParserNSJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 0873FF53164B084C002323AA /* RKJSONParserNSJSON.h */; };
+		0873FF57164B084C002323AA /* RKJSONParserNSJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0873FF54164B084C002323AA /* RKJSONParserNSJSON.m */; };
+		0873FF58164B084C002323AA /* RKJSONParserNSJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0873FF54164B084C002323AA /* RKJSONParserNSJSON.m */; };
+		0873FF59164B084C002323AA /* RKJSONParserNSJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0873FF54164B084C002323AA /* RKJSONParserNSJSON.m */; };
+		0873FF5A164B084C002323AA /* RKJSONParserNSJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0873FF54164B084C002323AA /* RKJSONParserNSJSON.m */; };
 		08C71B72164ACFEB001C0B80 /* RKConfigurationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C71B38164ACFEB001C0B80 /* RKConfigurationDelegate.h */; };
 		08C71B73164ACFEB001C0B80 /* RKConfigurationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C71B38164ACFEB001C0B80 /* RKConfigurationDelegate.h */; };
 		08C71B74164ACFEB001C0B80 /* RKDynamicObjectMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C71B39164ACFEB001C0B80 /* RKDynamicObjectMapping.h */; };
@@ -133,12 +139,6 @@
 		08C71BE5164ACFEB001C0B80 /* NSString+RKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C71B61164ACFEB001C0B80 /* NSString+RKAdditions.m */; };
 		08C71BE6164ACFEB001C0B80 /* NSString+RKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C71B61164ACFEB001C0B80 /* NSString+RKAdditions.m */; };
 		08C71BE7164ACFEB001C0B80 /* NSString+RKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C71B61164ACFEB001C0B80 /* NSString+RKAdditions.m */; };
-		08C71BE8164ACFEB001C0B80 /* RKJSONParserJSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C71B64164ACFEB001C0B80 /* RKJSONParserJSONKit.h */; };
-		08C71BE9164ACFEB001C0B80 /* RKJSONParserJSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C71B64164ACFEB001C0B80 /* RKJSONParserJSONKit.h */; };
-		08C71BEA164ACFEB001C0B80 /* RKJSONParserJSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C71B65164ACFEB001C0B80 /* RKJSONParserJSONKit.m */; };
-		08C71BEB164ACFEB001C0B80 /* RKJSONParserJSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C71B65164ACFEB001C0B80 /* RKJSONParserJSONKit.m */; };
-		08C71BEC164ACFEB001C0B80 /* RKJSONParserJSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C71B65164ACFEB001C0B80 /* RKJSONParserJSONKit.m */; };
-		08C71BED164ACFEB001C0B80 /* RKJSONParserJSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C71B65164ACFEB001C0B80 /* RKJSONParserJSONKit.m */; };
 		08C71BEE164ACFEB001C0B80 /* RKDotNetDateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C71B66164ACFEB001C0B80 /* RKDotNetDateFormatter.h */; };
 		08C71BEF164ACFEB001C0B80 /* RKDotNetDateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C71B66164ACFEB001C0B80 /* RKDotNetDateFormatter.h */; };
 		08C71BF0164ACFEB001C0B80 /* RKDotNetDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C71B67164ACFEB001C0B80 /* RKDotNetDateFormatter.m */; };
@@ -222,6 +222,8 @@
 		0873FF45164AFFB1002323AA /* AbstractMappableObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractMappableObject.m; sourceTree = "<group>"; };
 		0873FF46164AFFB1002323AA /* MappableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MappableObject.h; sourceTree = "<group>"; };
 		0873FF50164B00A6002323AA /* RestKitLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestKitLogging.h; sourceTree = "<group>"; };
+		0873FF53164B084C002323AA /* RKJSONParserNSJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKJSONParserNSJSON.h; sourceTree = "<group>"; };
+		0873FF54164B084C002323AA /* RKJSONParserNSJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKJSONParserNSJSON.m; sourceTree = "<group>"; };
 		08C71B38164ACFEB001C0B80 /* RKConfigurationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKConfigurationDelegate.h; sourceTree = "<group>"; };
 		08C71B39164ACFEB001C0B80 /* RKDynamicObjectMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKDynamicObjectMapping.h; sourceTree = "<group>"; };
 		08C71B3A164ACFEB001C0B80 /* RKDynamicObjectMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKDynamicObjectMapping.m; sourceTree = "<group>"; };
@@ -262,8 +264,6 @@
 		08C71B5F164ACFEB001C0B80 /* NSDictionary+RKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RKAdditions.m"; sourceTree = "<group>"; };
 		08C71B60164ACFEB001C0B80 /* NSString+RKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RKAdditions.h"; sourceTree = "<group>"; };
 		08C71B61164ACFEB001C0B80 /* NSString+RKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RKAdditions.m"; sourceTree = "<group>"; };
-		08C71B64164ACFEB001C0B80 /* RKJSONParserJSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKJSONParserJSONKit.h; sourceTree = "<group>"; };
-		08C71B65164ACFEB001C0B80 /* RKJSONParserJSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKJSONParserJSONKit.m; sourceTree = "<group>"; };
 		08C71B66164ACFEB001C0B80 /* RKDotNetDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKDotNetDateFormatter.h; sourceTree = "<group>"; };
 		08C71B67164ACFEB001C0B80 /* RKDotNetDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKDotNetDateFormatter.m; sourceTree = "<group>"; };
 		08C71B68164ACFEB001C0B80 /* RKErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKErrors.h; sourceTree = "<group>"; };
@@ -332,6 +332,8 @@
 				0873FF45164AFFB1002323AA /* AbstractMappableObject.m */,
 				0873FF46164AFFB1002323AA /* MappableObject.h */,
 				0873FF50164B00A6002323AA /* RestKitLogging.h */,
+				0873FF53164B084C002323AA /* RKJSONParserNSJSON.h */,
+				0873FF54164B084C002323AA /* RKJSONParserNSJSON.m */,
 			);
 			path = Additions;
 			sourceTree = "<group>";
@@ -388,7 +390,6 @@
 				08C71B5F164ACFEB001C0B80 /* NSDictionary+RKAdditions.m */,
 				08C71B60164ACFEB001C0B80 /* NSString+RKAdditions.h */,
 				08C71B61164ACFEB001C0B80 /* NSString+RKAdditions.m */,
-				08C71B62164ACFEB001C0B80 /* Parsers */,
 				08C71C10164AD0DF001C0B80 /* RestKit-Prefix.pch */,
 				08C71B66164ACFEB001C0B80 /* RKDotNetDateFormatter.h */,
 				08C71B67164ACFEB001C0B80 /* RKDotNetDateFormatter.m */,
@@ -404,23 +405,6 @@
 				08C71B71164ACFEB001C0B80 /* RKPathMatcher.m */,
 			);
 			path = Support;
-			sourceTree = "<group>";
-		};
-		08C71B62164ACFEB001C0B80 /* Parsers */ = {
-			isa = PBXGroup;
-			children = (
-				08C71B63164ACFEB001C0B80 /* JSON */,
-			);
-			path = Parsers;
-			sourceTree = "<group>";
-		};
-		08C71B63164ACFEB001C0B80 /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-				08C71B64164ACFEB001C0B80 /* RKJSONParserJSONKit.h */,
-				08C71B65164ACFEB001C0B80 /* RKJSONParserJSONKit.m */,
-			);
-			path = JSON;
 			sourceTree = "<group>";
 		};
 		25160D0B14564E810060A5C5 = {
@@ -492,7 +476,6 @@
 				08C71BD6164ACFEB001C0B80 /* RKParserRegistry.h in Headers */,
 				08C71BDC164ACFEB001C0B80 /* NSDictionary+RKAdditions.h in Headers */,
 				08C71BE2164ACFEB001C0B80 /* NSString+RKAdditions.h in Headers */,
-				08C71BE8164ACFEB001C0B80 /* RKJSONParserJSONKit.h in Headers */,
 				08C71BEE164ACFEB001C0B80 /* RKDotNetDateFormatter.h in Headers */,
 				08C71BF4164ACFEB001C0B80 /* RKErrors.h in Headers */,
 				08C71BFA164ACFEB001C0B80 /* RKFixCategoryBug.h in Headers */,
@@ -505,6 +488,7 @@
 				0873FF47164AFFB1002323AA /* AbstractMappableObject.h in Headers */,
 				0873FF4D164AFFB1002323AA /* MappableObject.h in Headers */,
 				0873FF51164B00A6002323AA /* RestKitLogging.h in Headers */,
+				0873FF55164B084C002323AA /* RKJSONParserNSJSON.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,7 +518,6 @@
 				08C71BD7164ACFEB001C0B80 /* RKParserRegistry.h in Headers */,
 				08C71BDD164ACFEB001C0B80 /* NSDictionary+RKAdditions.h in Headers */,
 				08C71BE3164ACFEB001C0B80 /* NSString+RKAdditions.h in Headers */,
-				08C71BE9164ACFEB001C0B80 /* RKJSONParserJSONKit.h in Headers */,
 				08C71BEF164ACFEB001C0B80 /* RKDotNetDateFormatter.h in Headers */,
 				08C71BF5164ACFEB001C0B80 /* RKErrors.h in Headers */,
 				08C71BFB164ACFEB001C0B80 /* RKFixCategoryBug.h in Headers */,
@@ -547,6 +530,7 @@
 				0873FF48164AFFB1002323AA /* AbstractMappableObject.h in Headers */,
 				0873FF4E164AFFB1002323AA /* MappableObject.h in Headers */,
 				0873FF52164B00A6002323AA /* RestKitLogging.h in Headers */,
+				0873FF56164B084C002323AA /* RKJSONParserNSJSON.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -747,7 +731,6 @@
 				08C71BD8164ACFEB001C0B80 /* RKParserRegistry.m in Sources */,
 				08C71BDE164ACFEB001C0B80 /* NSDictionary+RKAdditions.m in Sources */,
 				08C71BE4164ACFEB001C0B80 /* NSString+RKAdditions.m in Sources */,
-				08C71BEA164ACFEB001C0B80 /* RKJSONParserJSONKit.m in Sources */,
 				08C71BF0164ACFEB001C0B80 /* RKDotNetDateFormatter.m in Sources */,
 				08C71BF6164ACFEB001C0B80 /* RKErrors.m in Sources */,
 				08C71BFE164ACFEB001C0B80 /* RKISO8601DateFormatter.m in Sources */,
@@ -755,6 +738,7 @@
 				08C71C0C164ACFEB001C0B80 /* RKPathMatcher.m in Sources */,
 				08C71C17164AD11D001C0B80 /* RKOrderedDictionary.m in Sources */,
 				0873FF49164AFFB1002323AA /* AbstractMappableObject.m in Sources */,
+				0873FF57164B084C002323AA /* RKJSONParserNSJSON.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -780,7 +764,6 @@
 				08C71BD9164ACFEB001C0B80 /* RKParserRegistry.m in Sources */,
 				08C71BDF164ACFEB001C0B80 /* NSDictionary+RKAdditions.m in Sources */,
 				08C71BE5164ACFEB001C0B80 /* NSString+RKAdditions.m in Sources */,
-				08C71BEB164ACFEB001C0B80 /* RKJSONParserJSONKit.m in Sources */,
 				08C71BF1164ACFEB001C0B80 /* RKDotNetDateFormatter.m in Sources */,
 				08C71BF7164ACFEB001C0B80 /* RKErrors.m in Sources */,
 				08C71BFF164ACFEB001C0B80 /* RKISO8601DateFormatter.m in Sources */,
@@ -788,6 +771,7 @@
 				08C71C0D164ACFEB001C0B80 /* RKPathMatcher.m in Sources */,
 				08C71C18164AD11D001C0B80 /* RKOrderedDictionary.m in Sources */,
 				0873FF4A164AFFB1002323AA /* AbstractMappableObject.m in Sources */,
+				0873FF58164B084C002323AA /* RKJSONParserNSJSON.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -813,7 +797,6 @@
 				08C71BDA164ACFEB001C0B80 /* RKParserRegistry.m in Sources */,
 				08C71BE0164ACFEB001C0B80 /* NSDictionary+RKAdditions.m in Sources */,
 				08C71BE6164ACFEB001C0B80 /* NSString+RKAdditions.m in Sources */,
-				08C71BEC164ACFEB001C0B80 /* RKJSONParserJSONKit.m in Sources */,
 				08C71BF2164ACFEB001C0B80 /* RKDotNetDateFormatter.m in Sources */,
 				08C71BF8164ACFEB001C0B80 /* RKErrors.m in Sources */,
 				08C71C00164ACFEB001C0B80 /* RKISO8601DateFormatter.m in Sources */,
@@ -821,6 +804,7 @@
 				08C71C0E164ACFEB001C0B80 /* RKPathMatcher.m in Sources */,
 				08C71C19164AD11D001C0B80 /* RKOrderedDictionary.m in Sources */,
 				0873FF4B164AFFB1002323AA /* AbstractMappableObject.m in Sources */,
+				0873FF59164B084C002323AA /* RKJSONParserNSJSON.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -846,7 +830,6 @@
 				08C71BDB164ACFEB001C0B80 /* RKParserRegistry.m in Sources */,
 				08C71BE1164ACFEB001C0B80 /* NSDictionary+RKAdditions.m in Sources */,
 				08C71BE7164ACFEB001C0B80 /* NSString+RKAdditions.m in Sources */,
-				08C71BED164ACFEB001C0B80 /* RKJSONParserJSONKit.m in Sources */,
 				08C71BF3164ACFEB001C0B80 /* RKDotNetDateFormatter.m in Sources */,
 				08C71BF9164ACFEB001C0B80 /* RKErrors.m in Sources */,
 				08C71C01164ACFEB001C0B80 /* RKISO8601DateFormatter.m in Sources */,
@@ -854,6 +837,7 @@
 				08C71C0F164ACFEB001C0B80 /* RKPathMatcher.m in Sources */,
 				08C71C1A164AD11D001C0B80 /* RKOrderedDictionary.m in Sources */,
 				0873FF4C164AFFB1002323AA /* AbstractMappableObject.m in Sources */,
+				0873FF5A164B084C002323AA /* RKJSONParserNSJSON.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

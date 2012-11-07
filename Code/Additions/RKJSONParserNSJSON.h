@@ -1,9 +1,8 @@
 //
-//  RKJSONParserJSONKit.h
-//  RestKit
+//  RKJSONParserNSJSON.h
 //
-//  Created by Blake Watters on 5/14/11.
-//  Copyright (c) 2009-2012 RestKit. All rights reserved.
+//  Created by Levi Brown on 11/7/12.
+//  Copyright (c) 2012 Levi Brown. All rights reserved.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -20,7 +19,11 @@
 
 #import "RKParser.h"
 
-@interface RKJSONParserJSONKit : NSObject <RKParser> {
-}
+@interface RKJSONParserNSJSON : NSObject <RKParser>
+
+/**
+ Options for reading the response JSON data and creating the Foundation objects. For possible values, see the `NSJSONSerialization` documentation section "NSJSONReadingOptions".
+ */
+@property (nonatomic, assign) NSJSONReadingOptions JSONReadingOptions;
 
 @end
