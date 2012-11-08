@@ -6,7 +6,7 @@ It is intended to be used in iOS 5 and later, and uses `NSJSONSerializer` (as op
 
 ### Installing
 
-If you're using [CocoPods](http://cocopods.org) it's as simple as:
+If you're using [CocoPods](http://cocopods.org) it's as simple as adding this to your `Podfile`:
 
 	pod 'RestKitObjectMapping', :git => 'https://github.com/levigroker/RestKitObjectMapping.git'
 
