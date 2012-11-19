@@ -17,14 +17,31 @@
 //  limitations under the License.
 //
 
+#import <Foundation/Foundation.h>
 #import "DDLog.h"
 
-static const int rkLogLevel = LOG_LEVEL_ERROR;
-
+extern const int rkDefaultLogLevel;
 #define RK_LOG_CONTEXT 80
 
-#define RKLogError(frmt, ...)     SYNC_LOG_OBJC_MAYBE(rkLogLevel, LOG_FLAG_ERROR,   RK_LOG_CONTEXT, frmt, ##__VA_ARGS__)
-#define RKLogWarning(frmt, ...)     ASYNC_LOG_OBJC_MAYBE(rkLogLevel, LOG_FLAG_WARN,    RK_LOG_CONTEXT, frmt, ##__VA_ARGS__)
-#define RKLogInfo(frmt, ...)     ASYNC_LOG_OBJC_MAYBE(rkLogLevel, LOG_FLAG_INFO,    RK_LOG_CONTEXT, frmt, ##__VA_ARGS__)
-#define RKLogDebug(frmt, ...)     ASYNC_LOG_OBJC_MAYBE(rkLogLevel, LOG_FLAG_INFO,    RK_LOG_CONTEXT, frmt, ##__VA_ARGS__)
-#define RKLogTrace(frmt, ...)  ASYNC_LOG_OBJC_MAYBE(rkLogLevel, LOG_FLAG_VERBOSE, RK_LOG_CONTEXT, frmt, ##__VA_ARGS__)
+#define RKLogError(frmt, ...)     SYNC_LOG_OBJC_MAYBE([RestKitLogging sharedInstance].logLevel, LOG_FLAG_ERROR,   RK_LOG_CONTEXT, frmt, ##__VA_ARGS__)
+#define RKLogWarning(frmt, ...)     ASYNC_LOG_OBJC_MAYBE([RestKitLogging sharedInstance].logLevel, LOG_FLAG_WARN,    RK_LOG_CONTEXT, frmt, ##__VA_ARGS__)
+#define RKLogInfo(frmt, ...)     ASYNC_LOG_OBJC_MAYBE([RestKitLogging sharedInstance].logLevel, LOG_FLAG_INFO,    RK_LOG_CONTEXT, frmt, ##__VA_ARGS__)
+#define RKLogDebug(frmt, ...)     ASYNC_LOG_OBJC_MAYBE([RestKitLogging sharedInstance].logLevel, LOG_FLAG_INFO,    RK_LOG_CONTEXT, frmt, ##__VA_ARGS__)
+#define RKLogTrace(frmt, ...)  ASYNC_LOG_OBJC_MAYBE([RestKitLogging sharedInstance].logLevel, LOG_FLAG_VERBOSE, RK_LOG_CONTEXT, frmt, ##__VA_ARGS__)
+
+@interface RestKitLogging : NSObject
+
+/* Should be one of the CocoaLumberjack logging levels:
+ LOG_LEVEL_OFF
+ LOG_LEVEL_ERROR
+ LOG_LEVEL_WARN
+ LOG_LEVEL_INFO
+ LOG_LEVEL_VERBOSE
+ 
+ Defaults to 'rkDefaultLogLevel'
+*/
+@property (nonatomic,assign) int logLevel;
+
++ (RestKitLogging *)sharedInstance;
+
+@end
