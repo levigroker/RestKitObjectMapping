@@ -64,6 +64,9 @@
     
     RKObjectMapping *mapping = [[mappableObject class] objectMapping];
     RKObjectMapping *inverseMapping = [mapping inverseMapping];
+    //Preserve the date formatters from the original mapping object
+    inverseMapping.preferredDateFormatter = mapping.preferredDateFormatter;
+    inverseMapping.dateFormatters = mapping.dateFormatters;
     if (inverseMapping == nil)
     {
         RKLogWarning(@"No mapping available for class '%@'.", [mappableObject class]);
