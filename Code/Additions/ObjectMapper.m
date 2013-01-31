@@ -32,6 +32,9 @@
 {
     NSArray *retVal = nil;
     
+    //Encase mapping operation in an autorelease pool so we can readily relaim autoreleased object memory
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    
     //Create and populate a mapping provider based on the supplied key path to class mappings
     RKObjectMappingProvider *mappingProvider = [[[RKObjectMappingProvider alloc] init] autorelease];
     
@@ -54,6 +57,13 @@
     RKObjectMapper *mapper = [RKObjectMapper mapperWithObject:dictionary mappingProvider:mappingProvider];
     RKObjectMappingResult *mappingResult = [mapper performMapping];
     retVal = [mappingResult asCollection];
+    //Retain our object, so the autorelease pool drain does not release it.
+    [retVal retain];
+    
+    //Drain the autorelease pool
+    [pool release];
+    //Now that we're outside the autorelease pool, return an autoreleased object
+    [retVal autorelease];
     
     return retVal;
 }
@@ -62,6 +72,9 @@
 {
     NSDictionary *retVal = nil;
     
+    //Encase mapping operation in an autorelease pool so we can readily relaim autoreleased object memory
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+
     RKObjectMapping *mapping = [[mappableObject class] objectMapping];
     RKObjectMapping *inverseMapping = [mapping inverseMapping];
     //Preserve the date formatters from the original mapping object
@@ -78,12 +91,19 @@
         //See "Variable Qualifiers" at http://developer.apple.com/library/mac/#releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html
         __autoreleasing NSError *error = nil;
         retVal = [serializer serializedObject:&error];
+        //Retain our object, so the autorelease pool drain does not release it.
+        [retVal retain];
         if (!retVal)
         {
             RKLogError(@"Unable to serialize object '%@'. Error: %@", mappableObject, error);
         }
     }
     
+    //Drain the autorelease pool
+    [pool release];
+    //Now that we're outside the autorelease pool, return an autoreleased object
+    [retVal autorelease];
+
     return retVal;
 }
 
